@@ -18,7 +18,7 @@ export default function BottomHeader() {
 
   return isDesktop ? (
     <nav className="bg-[rgba(255,255,255,0.2)] mt-4 max-w-5xl lg:max-w-[110rem] mx-auto flex  items-center justify-between">
-      <ul className="flex items-center gap-4 p-8">
+      <ul className="flex items-center gap-4 md:p-6 lg:p-8">
         {navItems.map((item, index) => (
           <li
             key={index}
@@ -28,7 +28,7 @@ export default function BottomHeader() {
         ))}
       </ul>
 
-      <button className="bg-green-500 hover:bg-green-600 transition-all duration-300 py-9 px-14 text-xl text-white clip-left">
+      <button className="bg-green-500 hover:bg-green-600 transition-all duration-300 py-6 lg:p-8 px-14 text-xl text-white clip-left">
         Get Certificate
       </button>
     </nav>
