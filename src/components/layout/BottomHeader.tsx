@@ -22,20 +22,20 @@ export default function BottomHeader() {
         {navItems.map((item, index) => (
           <li
             key={index}
-            className="text-xl text-white hover:text-green-500 transition-all duration-300">
+            className="text-xl text-black hover:text-green-500 transition-all duration-300">
             <Link href={item.link}>{item.name}</Link>
           </li>
         ))}
       </ul>
 
-      <button className="bg-green-500 hover:bg-green-600 transition-all duration-300 py-6 lg:p-8 px-14 text-xl text-white clip-left">
+      <button className="bg-green-500 hover:bg-green-600 transition-all duration-300 py-6 lg:p-8 px-14 text-xl text-white clip-left mt-0">
         Get Certificate
       </button>
     </nav>
   ) : (
-    <div className="mt-4 bg-white p-4 flex items-center">
+    <div className="mt-4 p-4 flex items-center bg-[rgba(255,255,255,0.5)]">
       <Drawer direction="right">
-        <DrawerTrigger>
+        <DrawerTrigger className="m-0 text-black">
           <MenuIcon />
         </DrawerTrigger>
 

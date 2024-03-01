@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export default function TopHeader() {
   return (
-    <section className="px-5 py-0 text-white">
+    <section className="px-5 py-0">
       <div className="xl:max-w-[85%] mx-auto flex justify-between">
         <div>
           <h1 className="text-xl lg:text-4xl font-black">Liftup Academy</h1>
